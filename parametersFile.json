@@ -1,0 +1,171 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscriptionId": {
+      "value": "682603a3-d9f3-417f-98e8-a7b2398bc448"
+    },
+    "name": {
+      "value": "CamilleBrief8WP"
+    },
+    "location": {
+      "value": "West Europe"
+    },
+    "hostingPlanName": {
+      "value": "CamilleBrief8-ASP"
+    },
+    "serverFarmResourceGroup": {
+      "value": "CamilleBrief8"
+    },
+    "sku": {
+      "value": "PremiumV3"
+    },
+    "skuCode": {
+      "value": "P1V3"
+    },
+    "workerSize": {
+      "value": "3"
+    },
+    "workerSizeId": {
+      "value": "3"
+    },
+    "numberOfWorkers": {
+      "value": "1"
+    },
+    "kind": {
+      "value": "linux"
+    },
+    "reserved": {
+      "value": true
+    },
+    "alwaysOn": {
+      "value": true
+    },
+    "linuxFxVersion": {
+      "value": "DOCKER|mcr.microsoft.com/appsvc/wordpress-alpine-php:latest"
+    },
+    "dockerRegistryUrl": {
+      "value": "https://mcr.microsoft.com"
+    },
+    "storageSizeGB": {
+      "value": 256
+    },
+    "storageIops": {
+      "value": 1100
+    },
+    "storageAutoGrow": {
+      "value": "Enabled"
+    },
+    "backupRetentionDays": {
+      "value": 7
+    },
+    "geoRedundantBackup": {
+      "value": "Disabled"
+    },
+    "charset": {
+      "value": "utf8"
+    },
+    "collation": {
+      "value": "utf8_general_ci"
+    },
+    "vmName": {
+      "value": "Standard_E4ds_v4"
+    },
+    "serverEdition": {
+      "value": "MemoryOptimized"
+    },
+    "vCores": {
+      "value": 2
+    },
+    "serverName": {
+      "value": "camillebrief8-dbserver"
+    },
+    "serverUsername": {
+      "value": "CamilleBrief8Admin"
+    },
+    "serverPassword": {
+      "value": "Mot2PasseBrief8"
+    },
+    "databaseName": {
+      "value": "camillebrief8-_database"
+    },
+    "publicNetworkAccess": {
+      "value": "Disabled"
+    },
+    "wordpressTitle": {
+      "value": "WordPress sur Azure"
+    },
+    "wordpressAdminEmail": {
+      "value": "cdesousa@simplonformations.onmicrosoft.com"
+    },
+    "wordpressUsername": {
+      "value": "CamilleBrief8Admin"
+    },
+    "wordpressPassword": {
+      "value": "Mot2PasseBrief8"
+    },
+    "wpLocaleCode": {
+      "value": "fr_FR"
+    },
+    "storageAccountName": {
+      "value": "camillebrief8wpstorage"
+    },
+    "storageAccountType": {
+      "value": "Standard_RAGRS"
+    },
+    "storageAccountKind": {
+      "value": "StorageV2"
+    },
+    "accessTier": {
+      "value": "Hot"
+    },
+    "minimumTlsVersion": {
+      "value": "TLS1_2"
+    },
+    "supportsHttpsTrafficOnly": {
+      "value": true
+    },
+    "allowBlobPublicAccess": {
+      "value": true
+    },
+    "allowSharedKeyAccess": {
+      "value": true
+    },
+    "allowCrossTenantReplication": {
+      "value": true
+    },
+    "networkAclsBypass": {
+      "value": "AzureServices"
+    },
+    "networkAclsDefaultAction": {
+      "value": "Allow"
+    },
+    "keySource": {
+      "value": "Microsoft.Storage"
+    },
+    "encryptionEnabled": {
+      "value": true
+    },
+    "infrastructureEncryptionEnabled": {
+      "value": null
+    },
+    "blobContainerName": {
+      "value": "camillebrief8wpblob"
+    },
+    "blobPublicAccessLevel": {
+      "value": "blob"
+    },
+    "vnetName": {
+      "value": "camillebrief8-vnet"
+    },
+    "subnetForApp": {
+      "value": "camillebrief8-appsubnet"
+    },
+    "subnetForDb": {
+      "value": "camillebrief8-dbsubnet"
+    },
+    "privateDnsZoneNameForDb": {
+      "value": "camillebrief8-privatelink.mysql.database.azure.com"
+    }
+  }
+}
